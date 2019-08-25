@@ -1,3 +1,10 @@
+-- looper.lua
+-- Repeats layer loops enough to create a perfectly looping animation.
+-- Only operates on layers with "Loop" in the name.
+--
+-- Example: if you have looping animations on different layers with lengths 3, 5, 7,
+-- they will all be repeated enough to fill lcm(3, 5, 7) = 105 frames, creating a perfect loop.
+
 local spr = app.activeSprite
 if not spr then
 	app.alert("There is no sprite to loop")

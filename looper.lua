@@ -4,6 +4,8 @@
 --
 -- Example: if you have looping animations on different layers with lengths 3, 5, 7,
 -- they will all be repeated enough to fill lcm(3, 5, 7) = 105 frames, creating a perfect loop.
+--
+-- See looper_example.ase/looper_example_result.gif for an example file set up to use this script.
 
 local spr = app.activeSprite
 if not spr then
